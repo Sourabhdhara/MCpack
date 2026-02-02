@@ -15,6 +15,7 @@ It can be run locally or deployed using GitHub Codespaces + Ngrok for public sha
 ---
 
 ## 📂 Project Structure
+```bash
 project/
 │── app.py              # Flask backend
 │── requirements.txt    # Python dependencies
@@ -27,6 +28,7 @@ project/
 │    └── upload/        # pack thumbnails and UI images
 └── templates/
      └── index.html     # main webpage
+```
      
 ---
 

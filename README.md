@@ -67,11 +67,11 @@ Ngrok will provide a public link like: https://yourname.ngrok-free.dev
 - Place your .mcpack files in the repository folder.
 - Update packs.json with metadata (name, version, description).
 - Flask will serve these packs via routes (e.g., /packs).
-##🛠️ Future Improvements
+## 🛠️ Future Improvements
 - Add a styled HTML interface for browsing packs.
 - Enable search/filter for packs.
 - Provide permanent hosting via Railway.app or Render.
-##👤 Author
+## 👤 Author
 Sourabh Dhara
 Passionate about building dynamic, beginner-friendly web apps and sharing Minecraft packs with the community.
 

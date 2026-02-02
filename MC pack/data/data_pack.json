@@ -1,0 +1,16 @@
+{
+  "pack_name": "Data Pack ",
+  "pack_image": "static/upload/d.png",
+  "files": [
+    {
+      "name": "AK X-Ray Definitive",
+      "description": "Tweaks recipes and mob behaviors for harder survival",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    },
+    {
+      "name": "Survival Data v1.3",
+      "description": "Adds new challenges and rewards",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    }
+  ]
+}

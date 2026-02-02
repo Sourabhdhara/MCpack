@@ -1,0 +1,16 @@
+{
+  "pack_name": "Realistic Shader Pack",
+  "pack_image": "static/upload/s.png",
+  "files": [
+    {
+      "name": "Realistic Shader v2.0",
+      "description": "Enhances lighting and shadows for realism",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    },
+    {
+      "name": "Realistic Shader v2.1",
+      "description": "Adds water and particle effects",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    }
+  ]
+}

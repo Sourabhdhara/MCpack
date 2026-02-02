@@ -1,0 +1,94 @@
+/* Minecraft-inspired blocky UI styles */
+body {
+    font-family: 'Minecraft', monospace;
+    background-color: #e26b16; /* Dirt brown */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #16c942; /* Grass green */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #000000; /* Black border */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #000000; /* Black shadow for blocky effect */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pack-card, .file-card {
+    background-color: #295a3f; /* Stone gray */
+    border: 3px solid #000000; /* Black border */
+    border-radius: 0; /* No rounding for blocky look */
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pack-card:hover, .file-card:hover {
+    transform: scale(1.05);
+}
+
+.pack-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #000000;
+}
+
+.pack-card h3, .file-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.file-card p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.download-btn {
+    background-color: #d8db1c; /* Lime green */
+    color: #616161;
+    border: 2px solid #000000;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    border-radius: 0;
+}
+
+.download-btn:hover {
+    background-color: #ecde19; /* Darker green */
+}
+
+.hidden {
+    display: none;
+}
+
+#back-btn {
+    background-color: #FF6347; /* Tomato red */
+    color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    margin: 20px;
+    border-radius: 0;
+}
+
+#back-btn:hover {
+    background-color: #DC143C; /* Crimson */
+}

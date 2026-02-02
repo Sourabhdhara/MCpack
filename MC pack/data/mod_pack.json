@@ -1,0 +1,21 @@
+{
+  "pack_name": " Mod Pack",
+  "pack_image": "static/upload/m.png",
+  "files": [
+    {
+      "name": "Tech Mod v3.5",
+      "description": "Adds machines and automation to Minecraft",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    },
+    {
+      "name": "Tech Mod v3.6",
+      "description": "Includes bug fixes and new items",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    },
+    {
+      "name": "Tech Mod v3.7",
+      "description": "Performance optimizations",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    }
+  ]
+}

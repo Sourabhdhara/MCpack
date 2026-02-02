@@ -1,0 +1,16 @@
+{
+  "pack_name": "Resource Pack",
+  "pack_image": "static/upload/r.png",
+  "files": [
+    {
+      "name": "Pixel Art v1.0",
+      "description": "A classic pixel art resource pack for Minecraft",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    },
+    {
+      "name": "Pixel Art v2.0",
+      "description": "Updated version with more textures",
+      "download": "https://raw.githubusercontent.com/Sourabhdhara/MCpack/main/1.mcpack"
+    }
+  ]
+}

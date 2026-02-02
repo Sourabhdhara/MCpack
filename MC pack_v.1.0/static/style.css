@@ -1,0 +1,151 @@
+/* Minecraft-inspired pixel-art UI styles with biome themes */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', monospace; /* Pixel font for Minecraft feel */
+    background: linear-gradient(135deg, #093b07 0%, #0b3803 100%); /* Earthy dark gradient */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background: linear-gradient(135deg, #5a3504 0%, #58340a 100%); /* Earthy brown gradient for forest/cave theme */
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #FF4500, #FFA500, #FF4500); /* Orange highlights */
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pack-card, .file-card {
+    background: linear-gradient(145deg, #f5f5f5 0%, #e8e8e8 100%);
+    border: 2px solid #8B4513; /* Earthy border */
+    border-radius: 12px; /* More blocky */
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.pack-card::before, .file-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FF4500, #FFA500, #FF4500); /* Orange highlights */
+}
+
+/* Biome-specific backgrounds */
+.data-pack { background: linear-gradient(145deg, #696969 0%, #2F4F4F 100%); } /* Cave theme */
+.mod-pack { background: linear-gradient(145deg, #228B22 0%, #006400 100%); } /* Forest theme */
+.resource-pack { background: linear-gradient(145deg, #87CEEB 0%, #4682B4 100%); } /* Sky theme */
+.shader-pack { background: linear-gradient(145deg, #DC143C 0%, #8B0000 100%); } /* Nether theme */
+
+.pack-card:hover, .file-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.pack-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.pack-card:hover img {
+    transform: scale(1.05);
+}
+
+.pack-card h3, .file-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 700;
+}
+
+.file-card p {
+    margin: 10px 0 15px;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+}
